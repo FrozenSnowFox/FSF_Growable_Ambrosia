@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>FSFAmbrosiaResearch</defName>
+		<label>ambrosia</label>
+		<description>Allow colonists to plant ambrosia, a rare addictive fruit.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->ambrosia cultivation</li>
+				<li>subject_story->managed a secret grove on a tribal world</li>
+				<li>subject_story->fended off herds of ambrosia addicted animals</li>
+				<li>subject_story->developed specialized growing techniques</li>
+				<li>subject_gerund->cultivating ambrosia</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+</Defs>

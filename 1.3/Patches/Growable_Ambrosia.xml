@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<!-- Ambrosia -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_Ambrosia"]/plant</xpath>
+		<value>
+			<sowMinSkill>10</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>FSFAmbrosiaResearch</li>
+			</sowResearchPrerequisites>
+		</value>
+	</Operation>
+	
+</Patch>

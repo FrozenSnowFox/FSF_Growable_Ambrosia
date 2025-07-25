@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>FSFAmbrosiaResearch</defName>
+		<label>Ambrosia</label>
+		<description>Allow colonists to plant ambrosia, a rare addictive fruit.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>0.10</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>
