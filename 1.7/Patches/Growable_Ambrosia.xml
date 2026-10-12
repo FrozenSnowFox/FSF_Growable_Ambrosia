@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+
+			<!-- Ambrosia -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_Ambrosia"]/plant</xpath>
+				<value>
+					<sowMinSkill>10</sowMinSkill>
+					<sowTags>
+						<li>Ground</li>
+						<li>Hydroponic</li>
+					</sowTags>
+					<sowResearchPrerequisites>
+						<li>FSFAmbrosiaResearch</li>
+					</sowResearchPrerequisites>
+				</value>
+			</li>
+	
+			<!-- Biomes Caverns -->
+		
+			<li MayRequire="BiomesTeam.BiomesCaverns" Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "BMT_AmbrosyxFungus"]/plant</xpath>
+				<value>
+					<sowMinSkill>10</sowMinSkill>
+					<sowTags>
+						<li>Ground</li>
+						<li>Hydroponic</li>
+					</sowTags>
+					<sowResearchPrerequisites>
+						<li>FSFAmbrosiaResearch</li>
+					</sowResearchPrerequisites>
+				</value>
+			</li>
+			
+			<!-- Progression Agriculture (Remove Research Stuff) -->
+			
+			<li MayRequire="ferny.progressionagriculture" Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName = "FSFAmbrosiaResearch"]</xpath>
+			</li>
+			
+			<li MayRequire="ferny.progressionagriculture" Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Plant_Ambrosia"]/plant/sowResearchPrerequisites</xpath>
+			</li>
+			
+			<li MayRequire="ferny.progressionagriculture,BiomesTeam.BiomesCaverns" Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "BMT_AmbrosyxFungus"]/plant/sowResearchPrerequisites</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>
